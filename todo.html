@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">  
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light mb-5 " style="background-color: #5c7985;">
+        <img src="/images/icon.png" width="100" height="100"> 
+        <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/LOGIN.html" style="color: white;"><i class="logout bi-box-arrow-right"></i>LogOut</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+<!-- GRID -->
+<div class="headbg">
+    <div class="container  mb-5">
+     <div class="todotitle">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <h1>Key to your organised life!!</h1> 
+       </div>
+      </div>
+    </div>
+</div> 
+<div class="bg">
+<div class="container py-5">
+    <div class="todolist">
+      <div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-center">
+        <ul id="message"></ul>
+        <div id="result">Total Number of Items Selected = <span id="selected">0</span></div> 
+      </div>
+  </div>
+</div>  
+</div>
+<script src="/todo.js"></script>   
+</body>
+</html>

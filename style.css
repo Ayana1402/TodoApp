@@ -1,0 +1,55 @@
+.navbar{
+    font-size:larger;
+    color: white;
+    font-family: 'Copperplate',fantasy;
+}
+
+.title{
+    font-family: 'Lucida Handwriting', cursive;
+}
+.todotitle{
+    font-family: 'Lucida Handwriting', cursive;
+    text-align: center;
+}
+
+.home{
+    background-color: rgb(250, 248, 248);
+    
+   
+}
+
+.todolist{
+    background-color: rgb(250, 248, 248);
+    background-image: url(/images/782906.jpg);
+    color: aliceblue;
+    font-size: larger;
+}
+
+.list{
+    color:grey;
+}
+.bi{
+    color: rgb(230, 129, 103);
+}
+.logout{
+    font: size 20px;;
+    color: rgb(230, 129, 103);
+}
+.bg{
+    background-image: url(/images/5621334.jpg);
+}
+.headbg{
+    background-image: url(/images/5621334.jpg);
+}
+.loginbg{
+    background-image: url(/images/5621334.jpg);
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(246, 82, 82, 0.474);
+    color: white;
+    text-align: center;
+ }
