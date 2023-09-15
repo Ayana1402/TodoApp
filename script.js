@@ -20,5 +20,5 @@ function validate1(usr,pass,callback){
 }
 
 function pageIn(){
-    window.location.href = "/index.html";
+    window.location.href = "/home.html";
 }

@@ -1,66 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <title>Home Page</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <!-- LINK BOOT STAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">  
+  
 </head>
 <body>
+    <!-- NAVBAR -->
+    <div class="loginbg">
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #5c7985;">
+      <img src="/TodoApp/images/icon.png" width="100" height="100">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     </nav>
+      <div class="container mt-5">
+        <div class="row">
+        <div class="col-lg-6 d-flex align-items-center">
+        <form>
+          <div class="form-group mt-2">
+            <label for="uname">User Name</label>
+            <input type="text" class="form-control" id="uname" placeholder="Enter Username">
+            <!-- <span id="erroruname"></span> -->
+          </div>
+          <div class="form-group">
+            <label for="pswd">Password</label>
+            <input type="password" class="form-control" id="pswd" placeholder="Enter Password" autocomplete="off">
+            <span id="error"></span>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+          </div>
+          <div>
+          <button type="button" class="btn btn-primary" onclick="validate()">Login</button>
+          </div>
+        </form>
+       </div>
+        <div class="col-lg-6 d-flex">
+          <img  id="image" src="/TodoApp/images/check.jpg" width="100%">
+        </div>
+        </div>
+      </div>
+     
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light mb-5" style="background-color: #5c7985;">
-    <!-- <a class="navbar-brand" href="#"style="color: white;">Navbar</a> -->
-    <img src="/images/icon.png" width="100" height="100">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse justify-content-end mr-5" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="/todo.html" style="color: white;">Todo List <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/LOGIN.html" style="color: white;">LogOut</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- GRID -->
-  <div class="container text-center mt-6">
-    <div class="home">
-      <div class="col-sm-12 col-md-12 col-lg-12 d-flex align-items-center">
-        <h1 class="title"><b> From start to finish, a to-do list is what you need</b></h1>
+      <div class="footer">
+        <p>Footer</p>
       </div>
     </div>  
-    <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6 d-flex align-items-center">
-        <ul class="list"style="list-style: none;">
-        <h2><li><i class="bi bi-calendar2-check-fill"></i>  Foccused Carrer</li></h2>
-        <h2><li><i class="bi bi-calendar2-check-fill"></i>  Oraganised Life</li></h2>
-        <h2><li><i class="bi bi-calendar2-check-fill"></i>  Productive days</li></h2>
-        <h2><li><i class="bi bi-calendar2-check-fill"></i>  Happiest Output</li></h2>
-      </ul>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <img src="/images/chaos.jpg" width=100%>
-      </div>
-    </div>
-  </div>
-  </div>  
-  <div class="footer">
-    <p>Footer</p>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="script.js"></script>
-  <script type = "text/javascript" src="todo.js"></script>
+   <script src="style.css"></script> 
+   <script src="script.js"></script> 
 </body>
 </html>
